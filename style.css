@@ -1,0 +1,87 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.nav ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+/* ハンバーガー */
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.hamburger span {
+  display: block;
+  width: 30px;
+  height: 3px;
+  background-color: black;
+  margin: 6px 0;
+}
+
+.btn {
+  display: inline-block;
+  padding: 14px 28px;
+  border-radius: 8px;
+  color: white;
+  background-color: #fba722;
+  transition: background-color 0.2s ease;
+  text-decoration: none;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+}
+
+.btn::after {
+  content: "→";
+}
+
+.btn:hover {
+  background-color: #f77e14;
+}
+
+.btn:hover::after {
+  margin-left: 6px;
+}
+
+.cards{
+  display: flex;
+  margin-top: 20px;
+  gap: 24px;
+}
+.card {
+  width: 50px;
+  height: 50px;
+}
+
+.card:nth-child(1) {
+  background-color: red;
+}
+
+.card:nth-child(2) {
+  background-color: green;
+}
+
+.card:nth-child(3){
+  background-color: blue;
+}
+/* スマホ */
+@media (max-width: 768px) {
+
+  .nav {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+  .cards{
+    flex-direction: column;
+  }
+}
