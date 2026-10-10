@@ -3,7 +3,8 @@ body {
     font-family: "游ゴシック", YuGothic, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic";
     color: #333333;
 }
-.sp{
+
+.sp {
     display: none;
 }
 
@@ -73,13 +74,41 @@ header {
     padding: 0;
 }
 
+/* ヒーローイメージ */
+.hero_img {
+    position: relative;
+    height: 740px;
+}
+
+.hero_img_ab {
+    position: absolute;
+    z-index: -1;
+}
+
+.hero_img_left {
+    top: -70px;
+}
+
+.hero_img_right {
+    bottom: 70px;
+    right: 0;
+}
+
+.hero_img_main {
+    top: -70px;
+    right: 0;
+    width: 775px;
+}
+
 /* 1080px以下で表示 */
 @media (max-width: 1080px) {
+
     /* ヘッダー */
     .nav-list {
         display: none;
     }
-/* ハンバーガーメニュー */
+
+    /* ハンバーガーメニュー */
     .hamburger {
         display: block;
         position: relative;
@@ -106,19 +135,26 @@ header {
         top: 100%;
     }
 }
+
+/* 768px以下で表示 */
 @media (max-width:768px) {
+
     /* 全体 */
-    .pc{
+    .pc {
         display: none;
     }
-    .sp{
+
+    .sp {
         display: block;
     }
+
     /* ヘッダー */
     .header_img {
-    height: 16px;
-}
-.header-list {
-    margin: 0 16px;
-}
+        height: 16px;
+    }
+
+    .header-list {
+        margin: 0 16px;
+    }
+
 }
