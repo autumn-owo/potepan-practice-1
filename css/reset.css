@@ -1,0 +1,51 @@
+
+/* 全要素のサイズ計算を統一 */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* デフォルトの余白を削除 */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* ページ全体の基本設定 */
+body {
+    min-height: 100vh;
+    line-height: 1.5;
+}
+
+/* リストの装飾を削除 */
+ul,
+ol {
+    list-style: none;
+}
+
+/* リンクの装飾を削除 */
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* 画像の基本設定 */
+img {
+    display: block;
+    max-width: 100%;
+}
+
+/* フォームのフォントを統一 */
+button,
+input,
+select,
+textarea {
+    font: inherit;
+}
+
+/* テーブルの枠線を統一 */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
