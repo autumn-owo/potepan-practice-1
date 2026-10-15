@@ -54,7 +54,7 @@ header {
     opacity: 0.8;
 }
 
-.nav-li-btn {
+.nav-li-btn a{
     color: #fff;
     font-size: 12px;
     background-color: #f79214;
@@ -137,7 +137,7 @@ header {
     margin-bottom: 16px;
 }
 
-.hero_btn {
+.hero_btn a{
     align-items: center;
     background-color: #F79214;
     border-radius: 38px;
