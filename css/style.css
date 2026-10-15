@@ -50,7 +50,7 @@ header {
     display: block;
 }
 
-.nav-li:hover {
+.nav-li a:hover {
     opacity: 0.8;
 }
 
@@ -67,7 +67,7 @@ header {
     transition: opacity 0.2s;
 }
 
-.nav-li-btn:hover {
+.nav-li-btn a:hover {
     opacity: 0.8;
 }
 
